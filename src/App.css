@@ -1,0 +1,30 @@
+.App {
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.header {
+  margin-top: 50px;
+  text-align: center;
+}
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.form-container input {
+  padding: 10px;
+  font-size: 18px;
+  margin-right: 10px;
+  border-radius: 6px;
+}
+.form-container button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #5b5a5a;
+  color:white;
+  border: white solid transparent;
+cursor: pointer;
+border-radius: 6px;
+}
