@@ -1,3 +1,9 @@
+body {
+  background-image: url('./weatherbg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 .App {
   font-family: 'Courier New', Courier, monospace;
   -webkit-font-smoothing:antialiased;
@@ -5,6 +11,8 @@
 }
 .header {
   margin-top: 50px;
+  font-size: 60px;
+color: white;
   text-align: center;
 }
 .form-container{
@@ -20,11 +28,19 @@
   border-radius: 6px;
 }
 .form-container button {
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: #5b5a5a;
-  color:white;
-  border: white solid transparent;
-cursor: pointer;
-border-radius: 6px;
-}
+    background: linear-gradient(
+      135deg,
+      #17274a,
+      #2e4a86,
+      #0052cc,
+      #0052cc,
+      #17274a
+    );
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }

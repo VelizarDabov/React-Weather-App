@@ -1,5 +1,6 @@
 import React from "react";
 import './card.css'
+import WeatherIcons from "./weatherIcons";
 const Card = ({weather}) => {
     if (!weather) {
         return null; 
@@ -7,12 +8,13 @@ const Card = ({weather}) => {
     return(
         <div className="weather-card">
             <div className="card-body">
-            
-        <h2 className="weather-city">Weather in {weather.name}</h2>
-        <div>
-         <p className="weather-temp">Temperature: {weather.temperature}°C</p>
-          <p className="weather-temp">Humidity: {weather.humidity}%</p>
-          <p className="weather-temp">Condition: {weather.condition}</p> 
+           
+        <h2 className="weather-city">{weather.name}</h2>
+        <div className="weather-temp">
+        <WeatherIcons condition={weather.condition}  size="2x"/>
+         <p >Temperature: {weather.temperature}°C</p>
+          <p>Humidity: {weather.humidity}%</p>
+          <p>Condition: {weather.condition}</p> 
           </div>
         </div>
       </div>
